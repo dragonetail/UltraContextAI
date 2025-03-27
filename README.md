@@ -5,11 +5,13 @@ A comprehensive system for managing AI interactions through memory management, l
 
 ## 🔄 Core Components
 1. **Memory System** (`@memories.md`)
-   - Tracks all interactions chronologically
-   - Auto-updates with timestamps and tags
-   - Maintains project context and decisions
-   - Uses version control format [v1.0.0]
-   - Supports #tags for easy searching
+   - Contains categorized entries with dates (e.g., "Project Initialization (March 15, 2024)")
+   - Provides comprehensive single-line descriptions with full context
+   - Uses clear version numbering format [x.x.x] for each entry
+   - Maintains chronological order of development milestones
+   - Creates @memories2.md at 1000 lines with cross-references
+   - Documents complete interaction context, changes, and technical details
+   - Never deletes past entries to preserve project history
 
 2. **Lessons Learned** (`@lessons-learned.md`)
    - Captures solutions and best practices
@@ -200,10 +202,14 @@ AI: ⚡ AGENT MODE ACTIVATED
 
 ### Version Control
 ```markdown
-[v1.0.0] Format for all entries
-- Development updates
-- Manual updates
-- Progress tracking
+Memory entry format:
+- [x.x.x] Category with date: Comprehensive description with complete context
+- Example: [1.0.0] Project Setup (March 15, 2024): Successfully initialized a new Next.js 14 project with...
+
+Cross-file management:
+- Create @memories2.md at 1000 lines
+- Maintain cross-references between memory files
+- Never delete historical entries
 ```
 
 ### Cross-referencing
@@ -225,10 +231,13 @@ AI: ⚡ AGENT MODE ACTIVATED
 ## 🛠️ Best Practices
 
 1. **Memory Management**
-   - Use timestamps consistently
-   - Include relevant #tags
-   - Cross-reference related entries
-   - Keep single-line format
+   - Create categorized entries with clear dates
+   - Write comprehensive single-line descriptions
+   - Use consistent version numbering [x.x.x]
+   - Include complete technical implementation details
+   - Document all development decisions and outcomes
+   - Maintain chronological order of project milestones
+   - Never delete historical entries
 
 2. **Task Tracking**
    - Generate unique task IDs
@@ -263,7 +272,9 @@ AI: ⚡ AGENT MODE ACTIVATED
 - Keep .cursorrules file open
 - Monitor confidence scores
 - Use proper triggers
-- Follow version format
+- Follow memory entry format: [x.x.x] Category (Date): Comprehensive description
+- Categorize memory entries by development milestones
+- Include complete technical details in memory descriptions
 - Cross-reference frequently
 
 ## 🤝 Contributing
