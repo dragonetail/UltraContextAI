@@ -22,7 +22,7 @@ alwaysApply: false
 - Cross-references with other documentation
 - 与其他文档交叉引用
 - Facilitates project handover and review
-- 便于项目交接和审查
+- 便于项目交接和评审
 
 ## Requirements
 ## 要求
@@ -189,7 +189,7 @@ alwaysApply: false
    - Record learned lessons
    - 记录学到的经验教训
    - Review and update best practices
-   - 审查和更新最佳实践
+   - 评审和更新最佳实践
 
 ## Examples
 ## 示例

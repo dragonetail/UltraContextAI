@@ -19,7 +19,7 @@ Cross-reference with @memories.md and @lessons-learned.md for context and best p
 1. 实施类型（新功能）：
    - 触发器：用户请求新实施
    - 格式：模式：实施，焦点：新功能
-   - 要求：详细规划、架构审查、文档
+   - 要求：详细规划、架构评审、文档
    - 过程：计划模式(🎯) → 95%置信度 → 代理模式(⚡)
 
 2. 错误修复类型（问题解决）：

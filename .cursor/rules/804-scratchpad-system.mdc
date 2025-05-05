@@ -3,46 +3,22 @@ description: MANAGE task documentation and progress when ORGANIZING project acti
 globs: .cursor/scratchpad.md
 alwaysApply: false
 ---
-# Scratchpad System
-# 草稿本系统
+# 草稿本系统(Scratchpad System)
 
-> Version: 1.0.0
 > 版本：1.0.0
 
-## Context 📝
 ## 上下文 📝
-- Manages project tasks and documentation
 - 管理项目任务和文档
-- Tracks implementation progress
 - 跟踪实施进度
-- Maintains development guidelines
 - 维护开发指南
-- Organizes phase transitions
 - 组织阶段转换
-- Independent of mode system operation
 - 独立于模式系统操作
 
-## Requirements 📋
 ## 要求 📋
 
-### Task Documentation
 ### 任务文档
 
-#### Entry Format
 #### 条目格式
-```markdown
-# Project: [Name]
-Phase: [Current Phase]
-Last Updated: [Timestamp]
-
-## Current Tasks
-[ID-001] Description
-Status: [ ] Priority: [High/Medium/Low]
-Dependencies: [List]
-Steps:
-1. [Step details]
-Progress: [Updates]
-```
 ```markdown
 # 项目：[名称]
 阶段：[当前阶段]
@@ -57,99 +33,50 @@ Progress: [Updates]
 进度：[更新]
 ```
 
-#### Status Markers
 #### 状态标记
-- [ ] Planned
 - [ ] 计划中
-- [-] In Progress
 - [-] 进行中
-- [X] Completed
 - [X] 已完成
-- [!] Blocked
 - [!] 已阻塞
-- [?] Needs Review
-- [?] 需要审查
+- [?] 需要评审
 
-### Activation Triggers
 ### 激活触发器
 
-#### Manual Triggers
 #### 手动触发器
-- "plan" keyword
-- "plan"关键词
-- Phase transitions
+- "/plan"关键词
 - 阶段转换
-- Major task updates
 - 主要任务更新
 
-#### Required Updates
 #### 必需的更新
-- New task creation
 - 新任务创建
-- Status changes
 - 状态变更
-- Progress updates
 - 进度更新
-- Phase transitions
 - 阶段转换
 
-### Documentation Components
 ### 文档组件
 
-#### Task Management
 #### 任务管理
-- Unique IDs
 - 唯一ID
-- Clear descriptions
 - 清晰描述
-- Priority levels
 - 优先级
-- Dependencies
 - 依赖项
-- Progress tracking
 - 进度跟踪
 
-#### Implementation Guidelines
 #### 实施指南
-- Step-by-step procedures
-- 逐步程序
-- Technical requirements
+- 推进流程
 - 技术要求
-- Best practices
 - 最佳实践
-- Reference links
 - 参考链接
 
-#### Phase Documentation
 #### 阶段文档
-- Phase objectives
 - 阶段目标
-- Achievements
-- 成就
-- Lessons learned
+- 成果
 - 经验教训
-- Next steps
 - 下一步
 
-## Examples 💡
 ## 示例 💡
 
-### ✅ Good Scratchpad Entry
 ### ✅ 良好的草稿本条目
-```markdown
-# Project: Auth System
-Phase: Implementation
-
-## Current Tasks
-[ID-001] OAuth Integration
-Status: [-] Priority: High
-Dependencies: None
-Steps:
-1. Research providers ✅
-2. Design flow
-3. Implement endpoints
-Progress: Step 1 completed, researching OAuth2 specs
-```
 ```markdown
 # 项目：认证系统
 阶段：实施
@@ -165,18 +92,7 @@ Progress: Step 1 completed, researching OAuth2 specs
 进度：步骤1已完成，正在研究OAuth2规范
 ```
 
-### ❌ Invalid Entry
 ### ❌ 无效条目
-```markdown
-# Task: Add login
-
-[No ID ❌]
-[No status ❌]
-[No structure ❌]
-[Missing steps ❌]
-[No tracking ❌]
-[Incomplete documentation ❌]
-```
 ```markdown
 # 任务：添加登录
 
@@ -188,17 +104,10 @@ Progress: Step 1 completed, researching OAuth2 specs
 [文档不完整 ❌]
 ```
 
-## ⚠️ Critical Rules
 ## ⚠️ 关键规则
-- ALWAYS use unique task IDs
 - 始终使用唯一任务ID
-- MAINTAIN clear status tracking
 - 保持清晰的状态跟踪
-- UPDATE progress regularly
 - 定期更新进度
-- DOCUMENT step-by-step plans
 - 记录逐步计划
-- TRACK phase transitions
 - 跟踪阶段转换
-- INDEPENDENT of mode system
 - 独立于模式系统

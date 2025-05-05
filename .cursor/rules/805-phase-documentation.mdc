@@ -3,42 +3,22 @@ description: DOCUMENT phase completion details when TRANSITIONING between projec
 globs: docs/phases/PHASE-*/[FEATURE].md
 alwaysApply: false
 ---
-# Phase Documentation System
 # 阶段文档系统
 
-<version>1.0.0</version>
-<版本>1.0.0</版本>
+> 版本：1.0.0
 
-## Context
 ## 上下文
-- Documents completion of project phases
 - 记录项目阶段的完成情况
-- Maintains technical decision history
 - 维护技术决策历史
-- Tracks implementation progress
 - 跟踪实施进度
-- Ensures knowledge retention
 - 确保知识保留
-- Cross-references with other documentation
 - 与其他文档交叉引用
-- Facilitates project handover and review
-- 便于项目交接和审查
+- 便于项目交接和评审
 
-## Requirements
 ## 要求
 
-### Documentation Structure
 ### 文档结构
-1. File Organization
 1. 文件组织
-   ```md
-   docs/phases/PHASE-X/
-   ├── README.md           # Phase overview
-   ├── [FEATURE-NAME].md   # Feature documentation
-   ├── technical/          # Technical documentation
-   ├── decisions/         # Decision records
-   └── assets/            # Related assets   
-   ```
    ```md
    docs/phases/PHASE-X/
    ├── README.md           # 阶段概述
@@ -48,190 +28,108 @@ alwaysApply: false
    └── assets/            # 相关资源   
    ```
 
-2. Mandatory Sections
 2. 必要部分
    ```md
-   # [Feature Name] - Phase X
    # [功能名称] - 阶段 X
 
-   ## Overview
    ## 概述
-   - Phase number and name
    - 阶段编号和名称
-   - Start and end dates
    - 开始和结束日期
-   - Team members involved
    - 参与的团队成员
-   - Phase objectives
    - 阶段目标
 
-   ## Implementation Details
    ## 实施详情
-   - Components implemented
    - 已实施的组件
-   - Technical architecture
    - 技术架构
-   - Dependencies
    - 依赖关系
-   - API endpoints
    - API端点
 
-   ## Technical Decisions
    ## 技术决策
-   - Key decisions made
    - 所做的关键决策
-   - Alternatives considered
    - 考虑的替代方案
-   - Rationale
    - 理由
-   - Impact assessment
    - 影响评估
 
-   ## Code Examples
    ## 代码示例
-   - Key implementations
    - 关键实现
-   - Usage examples
    - 使用示例
-   - Configuration samples
    - 配置示例
 
-   ## Best Practices
    ## 最佳实践
-   - Coding standards
    - 编码标准
-   - Design patterns
    - 设计模式
-   - Performance optimizations
    - 性能优化
-   - Security considerations
    - 安全考虑
 
-   ## Lessons Learned
    ## 经验教训
-   - Challenges faced
    - 面临的挑战
-   - Solutions implemented
    - 实施的解决方案
-   - Improvements identified
-   - 确定的改进
-   - Future considerations
+   - 识别的改善内容
    - 未来考虑
 
-   ## References
    ## 参考
-   - Memory entries
    - 记忆条目
-   - Lesson references
    - 经验教训引用
-   - External resources
    - 外部资源
-   - Related documentation
    - 相关文档
    ```
 
-### Documentation Requirements
 ### 文档要求
-1. Content Guidelines
 1. 内容指南
-   - Use clear, concise language
    - 使用清晰、简洁的语言
-   - Include code snippets with comments
    - 包含带注释的代码片段
-   - Provide context for decisions
    - 为决策提供上下文
-   - Link to relevant documentation
    - 链接到相关文档
-   - Include visual aids when helpful
    - 在有帮助时包含视觉辅助
 
-2. Cross-References
 2. 交叉引用
-   - Link to @memories.md entries
    - 链接到@memories.md条目
-   - Reference @lessons-learned.md
    - 引用@lessons-learned.md
-   - Connect to scratchpad tasks
    - 连接到草稿本任务
-   - Cite external resources
    - 引用外部资源
 
-3. Version Control
 3. 版本控制
-   - Track document versions
    - 跟踪文档版本
-   - Record major updates
    - 记录重大更新
-   - Maintain change history
    - 维护变更历史
-   - Document contributors
    - 记录贡献者
 
-### Update Triggers
 ### 更新触发器
-1. Phase Completion
 1. 阶段完成
-   - Document all completed features
    - 记录所有已完成的功能
-   - Record technical decisions
    - 记录技术决策
-   - Update cross-references
    - 更新交叉引用
-   - Verify documentation completeness
    - 验证文档完整性
 
-2. Major Milestones
 2. 重大里程碑
-   - Document significant achievements
    - 记录重大成就
-   - Update implementation status
    - 更新实施状态
-   - Record learned lessons
    - 记录学到的经验教训
-   - Review and update best practices
-   - 审查和更新最佳实践
+   - 评审和更新最佳实践
 
-## Examples
 ## 示例
 
 <example>
-# Authentication System - Phase 1
 # 认证系统 - 阶段 1
 
-## Overview
 ## 概述
-- Phase: 1 - Core Authentication
 - 阶段：1 - 核心认证
-- Duration: 2024-02-01 to 2024-02-15
 - 持续时间：2024-02-01 至 2024-02-15
-- Team: Auth Team
 - 团队：认证团队
-- Objectives: Implement OAuth2 and email verification
 - 目标：实现 OAuth2 和电子邮件验证
 
-## Implementation Details
 ## 实施详情
-- OAuth2 provider integration
 - OAuth2 提供者集成
-- Email verification system
 - 电子邮件验证系统
-- Password reset flow
 - 密码重置流程
-- Session management
 - 会话管理
 
-## Technical Decisions
 ## 技术决策
-Decision: Use NextAuth.js
 - 决策：使用 NextAuth.js
-- Alternatives: Custom OAuth, Passport.js
 - 替代方案：自定义 OAuth, Passport.js
-- Rationale: Better Next.js integration, active community
 - 理由：更好的 Next.js 集成，活跃的社区
-- Impact: Faster development, maintained security
 - 影响：更快的开发，维护安全
 
-## Code Examples
 ## 代码示例
 ```typescript
 // OAuth configuration
@@ -249,76 +147,46 @@ export const authOptions = {
 };
 ```
 
-## Best Practices
 ## 最佳实践
-- Implement proper error handling
 - 实现适当的错误处理
-- Use TypeScript for type safety
 - 使用 TypeScript 进行类型安全
-- Follow security best practices
 - 遵循安全最佳实践
-- Maintain test coverage
 - 维护测试覆盖
 
-## Lessons Learned
 ## 经验教训
-- Early OAuth testing crucial
 - 早期 OAuth 测试至关重要
-- Need better error messages
 - 需要更好的错误消息
-- Consider rate limiting
 - 考虑速率限制
-- Plan for scaling
 - 计划扩展
 
 ## References
 ## 参考
-- Memory: [v1.0.0] Auth implementation
 - 记忆：[v1.0.0] 认证实现
-- Lesson: LL001 - OAuth Integration
 - 经验教训：LL001 - OAuth 集成
-- Docs: /api/auth/README.md
 - 文档：/api/auth/README.md
 </example>
 
 <example type="invalid">
-# Auth Phase Done
 # 认证阶段完成
 
-Added login system
 添加了登录系统
-Used some OAuth stuff
 使用了一些 OAuth 内容
-Works fine now
 现在运行良好
 
-Missing:
 缺失：
-- No structure
 - 无结构
-- No technical details
 - 无技术细节
-- No decisions recorded
 - 无记录的决策
-- No examples
 - 无示例
-- No cross-references
 - 无交叉引用
 </example>
 
 <critical>
-- ALWAYS follow documentation structure
 - 始终遵循文档结构
-- NEVER skip technical decisions
 - 切勿跳过技术决策
-- MAINTAIN cross-references
 - 维护交叉引用
-- INCLUDE code examples
 - 包含代码示例
-- DOCUMENT lessons learned
 - 记录经验教训
-- UPDATE on phase completion
 - 在阶段完成时更新
-- VERIFY documentation completeness
 - 验证文档完整性
 </critical>

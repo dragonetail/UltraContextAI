@@ -6,25 +6,15 @@ alwaysApply: false
 # Memory Format Rules
 # 记忆格式规则
 
-> Version: 4.0.0
 > 版本：4.0.0
 
 ## Context
 ## 上下文
-*This memories file maintains a chronological record of project activities and development decisions. Each entry requires a comprehensive single-line description with full context. It has a title, date, and a very long description of the interaction, changes, and decisions made. Create @memories2.md at 1000 lines with maintained cross-references. Never delete past entries.*
-*此记忆文件维护项目活动和开发决策的时间顺序记录。每个条目需要一个包含完整上下文的全面单行描述。它包含标题、日期以及关于交互、变更和所做决策的详细描述。在1000行处创建@memories2.md并保持交叉引用。永不删除过去的条目。*
+*此记忆文件维护项目活动和开发决策的时间顺序记录。每个条目需要一个包含完整上下文的全面单行描述。它包含标题、日期以及关于交互、变更和所做决策的详细描述。在超过1000时创建新的@memories2.md并保持交叉引用。永不删除过去的条目。*
 
-## Memory Entry Format
 ## 记忆条目格式
 
-### Basic Structure
 ### 基本结构
-```markdown
-# Project Memories
-
-### **Category Title (Date if applicable)**
-- Comprehensive single-line description with full context detailing the interaction, changes, and decisions made, including all relevant technical details, implementation approaches, and outcomes achieved while maintaining clarity and completeness.
-```
 ```markdown
 # 项目记忆
 
@@ -32,126 +22,66 @@ alwaysApply: false
 - 全面的单行描述，包含完整上下文，详细说明交互、变更和所做的决策，包括所有相关技术细节、实施方法和达成的成果，同时保持清晰和完整性。
 ```
 
-### Writing Rules
 ### 编写规则
-1. Entry Structure:
 1. 条目结构：
-   - Begin with clear category title
    - 以清晰的类别标题开始
-   - Include date in parentheses when applicable
    - 在适用时包含括号中的日期
-   - Provide comprehensive single-line description
    - 提供全面的单行描述
-   - Include full context of changes/decisions
    - 包含变更/决策的完整上下文
-   - Document all interactions and outcomes
    - 记录所有交互和结果
 
-2. Categories:
 2. 类别：
-   - Use descriptive category headers
    - 使用描述性类别标题
-   - Group related entries together
    - 将相关条目分组在一起
-   - Maintain chronological order
    - 保持时间顺序
-   - Include dates for time-sensitive entries
    - 为时间敏感的条目包含日期
 
-3. Content Requirements:
 3. 内容要求：
-   - Document complete interaction context
    - 记录完整的交互上下文
-   - Detail all changes and decisions made
    - 详细说明所有变更和所做的决策
-   - Include technical implementation details
    - 包含技术实施细节
-   - Specify outcomes and impacts
    - 指明结果和影响
-   - Reference related entries when needed
    - 在需要时引用相关条目
 
-4. Cross-Referencing:
 4. 交叉引用：
-   - Maintain links between related entries
    - 维护相关条目之间的链接
-   - Reference previous decisions/changes
    - 引用先前的决策/变更
-   - Keep context between memory files
    - 保持记忆文件之间的上下文
-   - Ensure traceability of changes
    - 确保变更的可追踪性
 
-### Content Guidelines
 ### 内容指南
-1. Description Format:
 1. 描述格式：
-   - Complete interaction context
    - 完整的交互上下文
-   - Changes/decisions made
    - 所做的变更/决策
-   - Technical implementation details
    - 技术实施细节
-   - Outcomes and impacts
    - 结果和影响
-   - Special considerations
    - 特殊考虑因素
 
-2. Chronological Organization:
 2. 时间顺序组织：
-   - Foundational entries first
    - 基础条目优先
-   - Dated entries in chronological order
    - 按时间顺序排列的日期条目
-   - Most recent entries at bottom
    - 最新条目在底部
-   - Create new file at 1000 lines
-   - 在1000行处创建新文件
+   - 超过1000行时创建新文件
 
-3. Categories:
 3. 类别：
-   - User Information
    - 用户信息
-   - Development Decisions
    - 开发决策
-   - Technical Implementations
    - 技术实施
-   - Feature Implementations
    - 功能实施
-   - Enhancement Categories
    - 增强类别
 
-## Examples
 ## 示例
 
-### ✅ Good Entries
 ### ✅ 良好条目
 ```markdown
-### **Layer Manager Implementation (March 19, 2025)**
-- The development team began implementing a centralized Layer Manager to handle all map layer logic, focusing on basin display, township selection, and section viewing with proper z-index, visibility, and zoom control, while ensuring proper integration with existing components and maintaining consistent state management throughout the application.
-
-### **Profile Management Implementation (March 19, 2025)**
-- The development team successfully implemented Phase 2 of Profile Management by adding new columns to the profiles table (first_name, last_name, theme_preference), creating sophisticated profile management components with proper form validation, and implementing comprehensive personal information and security features that support real-time updates while maintaining data integrity and user privacy.
-```
-```markdown
-### **图层管理器实施（2025年3月19日）**
+### **图层管理器实施（2025-03-19）**
 - 开发团队开始实施集中式图层管理器以处理所有地图图层逻辑，专注于盆地显示、乡镇选择和分区查看，具有适当的z-index、可见性和缩放控制，同时确保与现有组件的适当集成，并在整个应用程序中保持一致的状态管理。
 
-### **个人资料管理实施（2025年3月19日）**
+### **个人资料管理实施（2025-03-19）**
 - 开发团队通过向个人资料表添加新列（first_name、last_name、theme_preference）成功实施了个人资料管理第2阶段，创建了具有适当表单验证的复杂个人资料管理组件，并实施了支持实时更新的全面个人信息和安全功能，同时保持数据完整性和用户隐私。
 ```
 
-### ❌ Bad Entries
 ### ❌ 不良条目
-```markdown
-### **Layer Manager**
-- Added new layer manager
-[Too vague, missing context and details ❌]
-
-### **Profile Management**
-- Updated profile management with new features and columns
-[Lacks specific details about changes and implementation ❌]
-```
 ```markdown
 ### **图层管理器**
 - 添加了新的图层管理器
@@ -162,48 +92,27 @@ alwaysApply: false
 [缺少关于变更和实施的具体细节 ❌]
 ```
 
-## Critical Rules
 ## 关键规则
-1. Content Integrity:
 1. 内容完整性：
-   - NEVER delete past entries
    - 切勿删除过去的条目
-   - MAINTAIN complete context
    - 保持完整上下文
-   - PRESERVE all historical information
    - 保留所有历史信息
-   - ENSURE comprehensive descriptions
    - 确保全面描述
 
-2. File Management:
 2. 文件管理：
-   - CREATE @memories2.md at 1000 lines
-   - 在1000行处创建@memories2.md
-   - MAINTAIN cross-references between files
+   - 在超过1000行时创建新的@memories2.md
    - 维护文件间的交叉引用
-   - PRESERVE chronological order
    - 保持时间顺序
-   - KEEP consistent formatting
    - 保持一致的格式
 
-3. Writing Style:
 3. 写作风格：
-   - USE clear, comprehensive descriptions
    - 使用清晰、全面的描述
-   - INCLUDE full interaction context
    - 包含完整的交互上下文
-   - DOCUMENT all changes and decisions
    - 记录所有变更和决策
-   - MAINTAIN single-line format
    - 保持单行格式
 
-4. Organization:
 4. 组织结构：
-   - GROUP related entries by category
    - 按类别分组相关条目
-   - INCLUDE dates for time-sensitive entries
    - 为时间敏感的条目包含日期
-   - ORDER entries chronologically
    - 按时间顺序排列条目
-   - MAINTAIN category consistency
    - 保持类别一致性
