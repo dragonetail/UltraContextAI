@@ -4,19 +4,29 @@ globs:
 alwaysApply: false
 ---
 # Project Requirements Enforcement
+# 项目需求执行
 
 > Version: 1.0.0
+> 版本：1.0.0
 
 ## Context 🎯
+## 上下文 🎯
 - Ensures consistent project implementation
+- 确保一致的项目实施
 - Maintains alignment with project goals
+- 保持与项目目标的一致性
 - Enforces proper documentation
+- 强制适当的文档记录
 - Validates technical decisions
+- 验证技术决策
 - Supports beginner-friendly development approach
+- 支持对初学者友好的开发方法
 
 ## Requirements 📋
+## 要求 📋
 
 ### Documentation Structure
+### 文档结构
 ```markdown
 # Project Name
 ## Overview
@@ -30,86 +40,163 @@ alwaysApply: false
 - Key technologies
 - Development approach
 ```
+```markdown
+# 项目名称
+## 概述
+- 项目描述
+- 核心目标
+- 目标受众
+- 业务目的
+
+## 技术愿景
+- 架构概述
+- 关键技术
+- 开发方法
+```
 
 ### Requirements Categories
+### 需求类别
 
 #### Technical Stack
+#### 技术栈
 - Frontend framework
+- 前端框架
 - Backend services
+- 后端服务
 - Database solutions
+- 数据库解决方案
 - API integrations
+- API集成
 
 #### UI/UX Requirements
+#### UI/UX需求
 - Design system
+- 设计系统
 - Responsive breakpoints
+- 响应式断点
 - Accessibility standards
+- 可访问性标准
 - User interactions
+- 用户交互
 
 #### Functionality
+#### 功能性
 - Core features
+- 核心功能
 - User flows
+- 用户流程
 - Business logic
+- 业务逻辑
 - Integration points
+- 集成点
 
 #### Performance
+#### 性能
 - Load time targets
+- 加载时间目标
 - Optimization goals
+- 优化目标
 - Resource limits
+- 资源限制
 - Caching strategy
+- 缓存策略
 
 #### Security
+#### 安全性
 - Authentication
+- 认证
 - Authorization
+- 授权
 - Data protection
+- 数据保护
 - API security
+- API安全
 
 #### SEO & Analytics
+#### SEO和分析
 - Meta requirements
+- 元数据要求
 - Tracking needs
+- 跟踪需求
 - Performance metrics
+- 性能指标
 - Search optimization
+- 搜索优化
 
 ### Implementation Process
+### 实施过程
 
 #### Verification Steps
+#### 验证步骤
 - Check project information completeness
+- 检查项目信息完整性
 - Validate technical requirements
+- 验证技术要求
 - Review design requirements
+- 审查设计要求
 - Confirm functionality scope
+- 确认功能范围
 - Assess security needs
+- 评估安全需求
 
 #### Warning System
+#### 警告系统
 ```markdown
 ⚠️ WARNING: [Category]
 - Missing: [List of missing items]
 - Impact: [Potential issues]
 - Action: [Required steps]
 ```
+```markdown
+⚠️ 警告：[类别]
+- 缺失：[缺失项目列表]
+- 影响：[潜在问题]
+- 行动：[所需步骤]
+```
 
 #### Roadmap Management
+#### 路线图管理
 - Only create after complete requirements
+- 仅在完成需求后创建
 - Break down into phases
+- 分解为阶段
 - Define clear milestones
+- 定义明确的里程碑
 - List systematic approach
+- 列出系统方法
 - Order implementation logically
+- 逻辑排序实施
 
 ### Beginner-Friendly Considerations
+### 对初学者友好的考虑
 
 #### Technology Selection
+#### 技术选择
 - Prefer familiar technologies
+- 首选熟悉的技术
 - Choose well-documented solutions
+- 选择文档完善的解决方案
 - Consider learning curve
+- 考虑学习曲线
 - Enable AI tool support
+- 启用AI工具支持
 
 #### Implementation Guidance
+#### 实施指导
 - Provide clear examples
+- 提供清晰的示例
 - Include starter templates
+- 包含入门模板
 - Document common patterns
+- 记录常见模式
 - Reference similar projects
+- 参考类似项目
 
 ## Examples 💡
+## 示例 💡
 
 ### ✅ Good Project Requirements
+### ✅ 良好的项目需求
 ```markdown
 # Wedding Memories Blog
 
@@ -131,8 +218,30 @@ alwaysApply: false
 3. Phase 3: Real-time guestbook
 4. Phase 4: Mobile optimization
 ```
+```markdown
+# 婚礼回忆博客
+
+## 项目信息 ✅
+- 具有实时功能的数字婚礼留言簿
+- 照片库和记忆共享
+- 互动宾客参与
+- 移动优先设计
+
+## 要求 ✅
+- 技术栈：Next.js、Supabase、TailwindCSS
+- 功能：实时聊天、照片上传
+- 安全性：宾客认证
+- 性能：< 3秒加载时间
+
+## 路线图 ✅
+1. 阶段1：基本设置和认证
+2. 阶段2：照片库实施
+3. 阶段3：实时留言簿
+4. 阶段4：移动优化
+```
 
 ### ❌ Invalid Project Requirements
+### ❌ 无效的项目需求
 ```markdown
 # New Project
 
@@ -145,14 +254,36 @@ alwaysApply: false
 [Incomplete requirements ❌]
 [No clear roadmap ❌]
 ```
+```markdown
+# 新项目
+
+## 技术栈
+- 使用现代技术
+- 添加数据库
+- 使其速度快
+
+[缺少项目信息 ❌]
+[需求不完整 ❌]
+[没有明确的路线图 ❌]
+```
 
 ## ⚠️ Critical Rules
+## ⚠️ 关键规则
 - ALWAYS verify project information completeness
+- 始终验证项目信息的完整性
 - NEVER create roadmap without full requirements
+- 切勿在没有完整需求的情况下创建路线图
 - MAINTAIN clear documentation structure
+- 维护清晰的文档结构
 - ENSURE beginner-friendly approach
+- 确保对初学者友好的方法
 - USE warning system for missing items
+- 使用警告系统标识缺失项
 - VALIDATE against user's experience level
+- 根据用户的经验水平进行验证
 - FOCUS on practical implementation
+- 专注于实际实施
 - REFERENCE familiar technologies
+- 参考熟悉的技术
 - DOCUMENT all decisions and reasons
+- 记录所有决策和原因
