@@ -1,0 +1,94 @@
+---
+description: DOCUMENT development insights and solutions when ENCOUNTERING issues or improvements to MAINTAIN knowledge
+globs: .cursor/lessons-learned.md
+alwaysApply: false
+---
+# Lessons Learned Protocol
+# 经验教训协议
+
+> Version: 1.0.0
+> 版本：1.0.0
+
+## Context 📚
+## 上下文 📚
+- Serves as critical knowledge base for development insights
+- 作为开发见解的关键知识库
+- Captures solutions and best practices
+- 捕获解决方案和最佳实践
+- Documents issues and their resolutions
+- 记录问题及其解决方案
+- Maintains project-wide learning history
+- 维护项目范围内的学习历史
+
+## Requirements 📋
+## 要求 📋
+
+### Entry Format
+### 条目格式
+Single-line comprehensive format:
+单行综合格式：
+```markdown
+[v1.0.0-LL001] Category: Issue → Solution → Impact
+```
+```markdown
+[v1.0.0-LL001] 类别：问题 → 解决方案 → 影响
+```
+
+### Version Format
+### 版本格式
+- Format: v{major}.{minor}.{patch}-LL{sequential_number}
+- 格式：v{主版本}.{次版本}.{补丁版本}-LL{序列号}
+  - major: Breaking changes
+  - 主版本：破坏性变更
+  - minor: New features/significant updates
+  - 次版本：新功能/重大更新
+  - patch: Bug fixes/minor updates
+  - 补丁版本：错误修复/小更新
+  - LL: Lessons Learned prefix
+  - LL：经验教训前缀
+  - sequential_number: Unique 3-digit identifier (001-999)
+  - 序列号：唯一的3位标识符（001-999）
+
+## Examples 💡
+## 示例 💡
+
+### ✅ Good Lesson Entry
+### ✅ 良好的经验教训条目
+```markdown
+[v1.0.0-LL001] Component Error: TextInput props incompatible with DatePicker causing type errors during component composition → Implemented strict prop type validation and interface checks before component extension → Critical for preventing runtime type mismatches and ensuring component reusability
+```
+```markdown
+[v1.0.0-LL001] 组件错误：TextInput属性与DatePicker不兼容，在组件组合过程中导致类型错误 → 在组件扩展前实施了严格的属性类型验证和接口检查 → 对防止运行时类型不匹配和确保组件可重用性至关重要
+```
+
+### ❌ Invalid Lesson Entry
+### ❌ 无效的经验教训条目
+```markdown
+Bug: Button not working
+Fixed it by changing the code
+[No version ID ❌]
+[No category ❌]
+[No impact assessment ❌]
+```
+```markdown
+错误：按钮不工作
+通过更改代码修复它
+[无版本ID ❌]
+[无类别 ❌]
+[无影响评估 ❌]
+```
+
+## ⚠️ Critical Rules
+## ⚠️ 关键规则
+- ALWAYS include version ID, category, and impact
+- 始终包含版本ID、类别和影响
+- NEVER delete or modify existing entries
+- 切勿删除或修改现有条目
+- MAINTAIN single-line format for all entries
+- 为所有条目保持单行格式
+- INCLUDE clear problem → solution → impact chain
+- 包含清晰的问题 → 解决方案 → 影响链
+- CATEGORIZE entries appropriately
+- 适当分类条目
+- INCREMENT version numbers appropriately based on change type
+- 根据变更类型适当递增版本号
